@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="0 0 700 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="500" fill="url(#bg)"/>
+  <text x="350" y="230" text-anchor="middle" fill="#6366f1" font-size="48" font-family="Arial"></text>
+  <text x="350" y="290" text-anchor="middle" fill="#9eafc9" font-size="18" font-family="Arial">dna-certificate</text>
+  <text x="350" y="320" text-anchor="middle" fill="#5a78a2" font-size="14" font-family="Arial">Replace with actual image</text>
+</svg>
