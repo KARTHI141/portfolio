@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { SectionWrapper, SectionTitle } from './SectionWrapper';
-import { Quote, Star, Sprout, Award, Heart } from 'lucide-react';
+import { Quote, Star, Sprout } from 'lucide-react';
 
 const testimonials = [
   {
@@ -16,78 +16,10 @@ const testimonials = [
   },
 ];
 
-const highlights = [
-  {
-    title: 'Dedalus Utsav 2025',
-    subtitle: 'Winner',
-    description:
-      'Won the prestigious Dedalus Utsav 2025 competition, recognized for outstanding technical skills and innovation in front of senior leadership including global executives.',
-    icon: '🏆',
-    gradient: 'from-yellow-500 via-amber-500 to-orange-500',
-  },
-  {
-    title: 'DNA Core Values Award',
-    subtitle: 'Achieving Excellence Together',
-    description:
-      'Nominated for the Dedalus DNA Core Value Awards 2025 as recognition of outstanding commitment to Dedalus\' Core Value — signed by Group Chief HR Officer and CEO.',
-    icon: '🌟',
-    gradient: 'from-blue-500 via-indigo-500 to-purple-500',
-  },
-  {
-    title: 'Best Fresher Award',
-    subtitle: 'Growth Recognition',
-    description:
-      'Recognized as the best fresher at Dedalus for exceptional responsibility, programming talent, and continuous learning mindset.',
-    icon: '🌱',
-    gradient: 'from-emerald-500 to-green-500',
-  },
-];
-
 export function Testimonials() {
   return (
     <SectionWrapper id="testimonials">
-      <SectionTitle title="Recognition & Impact" subtitle="What others say" />
-
-      {/* Award Highlights — Visual Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        {highlights.map((item, index) => (
-          <motion.div
-            key={item.title}
-            initial={{ opacity: 0, y: 30, scale: 0.95 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.15, duration: 0.6 }}
-            whileHover={{ y: -8, scale: 1.02 }}
-            className="group relative glass-card p-6 overflow-hidden"
-          >
-            {/* Animated gradient border top */}
-            <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.gradient}`} />
-            
-            {/* Glow effect on hover */}
-            <div className={`absolute -inset-1 bg-gradient-to-r ${item.gradient} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 rounded-2xl`} />
-
-            <div className="relative z-10">
-              <motion.span 
-                className="text-4xl block mb-4"
-                animate={{ rotate: [0, -10, 10, -5, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-              >
-                {item.icon}
-              </motion.span>
-              
-              <h4 className="text-lg font-bold text-[var(--text-primary)] mb-1">
-                {item.title}
-              </h4>
-              <p className={`text-sm font-semibold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent mb-3`}>
-                {item.subtitle}
-              </p>
-              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+      <SectionTitle title="Testimonials" subtitle="What others say" />
 
       {/* Testimonial Quote */}
       {testimonials.map((testimonial, index) => (
