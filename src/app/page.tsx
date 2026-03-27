@@ -7,9 +7,6 @@ import { Education } from '@/components/Education';
 import { Projects } from '@/components/Projects';
 import { Achievements } from '@/components/Achievements';
 import { Testimonials } from '@/components/Testimonials';
-import { AwardGallery } from '@/components/AwardGallery';
-import { Resume } from '@/components/Resume';
-import { Learning } from '@/components/Learning';
 import { Contact } from '@/components/Contact';
 import { GitHubStats } from '@/components/GitHubStats';
 import { fetchGitHubRepos, fetchGitHubStats } from '@/lib/github';
@@ -41,10 +38,7 @@ export default async function Home() {
       <Education />
       <Projects repos={repos} />
       <Testimonials />
-      <AwardGallery />
       <Achievements />
-      <Resume />
-      <Learning />
       <Contact />
     </>
   );
