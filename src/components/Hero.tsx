@@ -129,7 +129,7 @@ export function Hero({ avatarUrl }: HeroProps) {
                 <ExternalLink size={16} className="relative z-10" />
               </a>
               <a
-                href="/resume.pdf"
+                href="/KARTHICK_RAJA_G_FlowCV_Resume_2026-03-16%20(1).pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold glass-card-hover text-[var(--text-primary)] border border-[var(--border-color)]"
               >
